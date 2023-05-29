@@ -49,11 +49,10 @@ header nav {
     color: #fff;
     padding: 3px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-right:20px;
 }
 
-.navbar li a:nth-child(1) {
-    margin-right: 25px;
-}
+
 
 .navbar li a:hover {
     color: yellow;
