@@ -15,9 +15,7 @@ body {
     display: none;
 }
 
-.navhead{
-    width:100%;
-}
+
 .navbar {
     display: flex;
     align-items: center;
