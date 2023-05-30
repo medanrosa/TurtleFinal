@@ -15,45 +15,30 @@ body {
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
+    background-color: #000;
     width: 100%;
-    height: 16vh;
-    background-color: rgb(0, 0, 0);
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
 }
 
-header .logo {
-    width: 150px;
-    height: 150px;
-    margin-left: -10px;
-    margin-top: -20px;
+.navbar img {
+    width: 80px;
+    height: auto;
 }
 
 .navbar ul li {
-    display: inline;
-    list-style: none;
-}
-
-header nav {
-    margin-left: 0px;
+    display: inline-block;
 }
 
 .navbar li a {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    color: #ffffff;
-    padding: 3px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.navbar li a:nth-child(1) {
-    margin-right: 25px;
+    padding-right: 20px;
+    color: #fff;
 }
 
 .navbar li a:hover {
-    color: rgb(0, 94, 255);
+    color: yellow;
     font-size: 17px;
     font-weight: bold;
 }
@@ -74,8 +59,8 @@ header .dropdown:hover .dropdown-cont {
     display: block;
 }
 
-/* headings */
-.mainheadings h1 {
+/* Body */
+main h1 {
     background-color: rgba(0, 0, 0, 0.3);
     font-family: cursive;
     text-align: center;
@@ -85,144 +70,76 @@ header .dropdown:hover .dropdown-cont {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 10px;
-    margin-bottom: -10px;
 }
 
-.pagebheading1 h2 {
+main .para-container,
+main .para-container-02,
+main .para-container-03 {
+    display: flex;
+    padding: 50px;
+    align-items: center;
+}
+
+.para-container h2 {
     text-align: center;
-    padding: 90px;
-    font-size: 30px;
-    font-weight: bolder;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #ffffff;
+    padding: 80px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
     text-transform: uppercase;
     letter-spacing: 5px;
-    margin-top: 200px;
-    margin-left: 160px;
+    word-spacing: 1px;
+    background-image: linear-gradient(270deg, #0193b0, #619ea9);
     width: 400px;
-    height: 400px;
-    background-image: linear-gradient(270deg, #3B4172, #1A224A);
-    border-radius: 30px;
+    border-radius: 15px;
 }
 
-/* paragraphs */
-.pagebpara1 p {
+.para-container p {
     color: rgb(255, 255, 255);
     text-align: justify;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: -480px;
-    margin-left: 850px;
-    width: 575px;
-    height: 250px;
     font-size: 30px;
-}
-
-.pagebpara2 p {
-    color: rgb(255, 255, 255);
-    text-align: justify;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 400px;
+    width: 900px;
     margin-left: 50px;
-    width: 575px;
-    height: 250px;
-    font-size: 30px;
 }
 
-.pagebpara3 p {
+.para-container-02 p,
+.para-container-03 p {
     color: rgb(255, 255, 255);
     text-align: justify;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 50px;
-    margin-left: 50px;
-    width: 575px;
-    height: 250px;
     font-size: 30px;
+    width: 900px;
+    margin-right: 50px;
 }
 
-/* images */
-.pagebimg1 {
-    float: left;
-    width: 250px;
-    height: 250px;
-    margin-top: -150px;
-    margin-left: 800px;
-    border-radius: 360px;
-}
-
-.pagebimg2 {
-    float: left;
-    width: 250px;
-    height: 250px;
-    margin-top: -350px;
-    margin-left: 1100px;
+.para-container-03 img {
+    float: right;
+    width: 350px;
+    height: 350px;
     border-radius: 360px;
 }
 
 /* map */
-.pgbmap {
-    border: 0px;
-    width: 550px;
-    height: 360px;
-    margin-top: -240px;
-    margin-left: 850px;
+.para-container-02 iframe {
+    border: none;
+    width: 100%;
+    height: 300px;
 }
 
 /* footer */
-.footer-basicb {
-    padding: 8px;
-    background-image: url(../images/newblubak.jpg);
+footer {
+    width: 100%;
+    background-image: url(/images/newblubak.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: #ffffff;
-    margin-top: 200px;
+    padding: 40px;
 }
 
-.footer-basicb ul {
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
-}
-
-.footer-basicb li {
-    padding: 0 10px;
-}
-
-.footer-basicb ul a {
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.8;
-}
-
-.footer-basicb ul a:hover {
-    opacity: 1;
-}
-
-.footer-basicb .socialb {
-    text-align: center;
-    padding-bottom: 25px;
-}
-
-.footer-basicb .socialb>a {
-    font-size: 30px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 75%;
-    border: 2px solid #ccc;
-    margin: 0 8px;
-    color: inherit;
-    opacity: 0.75;
-}
-
-.footer-basicb .socialb>a:hover {
-    opacity: 0.9;
-}
-
-.footer-basicb .copyrightb {
-    margin-top: 15px;
+footer p {
     font-style: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     font-weight: bolder;
@@ -230,27 +147,59 @@ header .dropdown:hover .dropdown-cont {
     color: #ffffff;
 }
 
+.copyrightb {
+    margin-bottom: 0px;
+}
+
+footer ul {
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+footer ul li {
+    padding: 10px 15px 0px 15px;
+}
+
+footer li a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+footer li a:hover {
+    opacity: 1;
+}
+
+footer .socialb a {
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 75%;
+    border: 2px solid #ffffff;
+    color: inherit;
+    opacity: 0.75;
+    margin: 0px 10px;
+}
+
+footer .socialb i {
+    padding: 5px;
+    color: white;
+}
+
+footer .socialb a:hover {
+    opacity: 1;
+}
+
 /* Media */
-@media screen and (max-width:475px) {
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        background-image: url(../images/newblubak.jpg);
-        overflow-x: hidden;
-    }
+@media (max-width:470px) {
 
     /* navbar */
     .navbar {
         display: none;
-        align-items: center;
-        width: 100%;
-        height: 16vh;
-        background-color: #000000;
     }
 
     .top-nav {
@@ -378,168 +327,24 @@ header .dropdown:hover .dropdown-cont {
         border-bottom: 1px solid #444;
     }
 
-    /* headings */
-    .mainheadings h1 {
-        background-color: rgba(0, 0, 0, 0.3);
-        font-family: cursive;
-        text-align: center;
-        padding: 80px;
+    /* Body */
+
+    main h1 {
+        padding: 30px;
         font-size: 40px;
-        font-weight: bolder;
-        color: #ffffff;
-        text-transform: uppercase;
-        width: 453px;
-        letter-spacing: 10px;
-        margin-top: 100px;
-        margin-bottom: -10px;
     }
 
-
-    .pagebheading1 h2 {
-        text-align: center;
-        padding: 90px;
-        font-size: 30px;
-        font-weight: bolder;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        color: #ffffff;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        margin-top: 100px;
-        margin-left: 30px;
-        width: 400px;
-        height: 400px;
-        background-image: linear-gradient(270deg, #3B4172, #1A224A);
-        border-radius: 30px;
+    main .para-container,
+    main .para-container-02,
+    main .para-container-03 {
+        flex-direction: column;
+        padding: 30px;
     }
 
-    /* paragraphs */
-    .pagebpara1 p {
-        color: rgb(255, 255, 255);
-        text-align: center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin-top: -30px;
-        margin-left: -50px;
-        width: 550px;
-        height: 400px;
-        font-size: 30px;
-        padding: 50px;
+    main .para-container p,
+    .para-container-02 p,
+    .para-container-03 p {
+        font-size: 20px;
+        width: fit-content;
     }
-
-    .pagebpara2 p {
-        color: rgb(255, 255, 255);
-        text-align: center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin-top: 300px;
-        margin-left: -50px;
-        width: 550px;
-        height: 400px;
-        font-size: 30px;
-        padding: 50px;
-    }
-
-    .pagebpara3 p {
-        color: rgb(255, 255, 255);
-        text-align: center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin-top: -20px;
-        margin-left: -50px;
-        width: 550px;
-        height: 400px;
-        font-size: 30px;
-        padding: 50px;
-    }
-
-    /* images */
-    .pagebimg1 {
-        float: left;
-        width: 200px;
-        height: 200px;
-        border-radius: 360px;
-        margin-top: 150px;
-        margin-left: 20px;
-    }
-
-    .pagebimg2 {
-        float: left;
-        width: 200px;
-        height: 200px;
-        border-radius: 360px;
-        margin-top: -50px;
-        margin-left: 230px;
-    }
-
-    /* map */
-    .pgbmap {
-        border: 0px;
-        width: 400px;
-        height: 350px;
-        margin-top: 200px;
-        margin-left: 30px;
-        border-radius: 10px;
-    }
-
-    /* footer */
-    .footer-basicb {
-        padding: 8px;
-        background-image: url(../images/newblubak.jpg);
-        color: #ffffff;
-        margin-top: 600px;
-        width: 450px;
-    }
-
-    .footer-basicb ul {
-        padding: 0;
-        list-style: none;
-        text-align: center;
-        font-size: 18px;
-        line-height: 1.6;
-        margin-bottom: 0;
-    }
-
-    .footer-basicb li {
-        padding: 0 10px;
-    }
-
-    .footer-basicb ul a {
-        color: inherit;
-        text-decoration: none;
-        opacity: 0.8;
-    }
-
-    .footer-basicb ul a:hover {
-        opacity: 1;
-    }
-
-    .footer-basicb .socialb {
-        text-align: center;
-        padding-bottom: 25px;
-    }
-
-    .footer-basicb .socialb>a {
-        font-size: 25px;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        display: inline-block;
-        text-align: center;
-        border-radius: 75%;
-        border: 2px solid #ccc;
-        margin: 0 8px;
-        color: inherit;
-        opacity: 0.75;
-    }
-
-    .footer-basicb .socialb>a:hover {
-        opacity: 0.9;
-    }
-
-    .footer-basicb .copyrightb {
-        margin-top: 15px;
-        font-style: Georgia, 'Times New Roman', Times, serif;
-        text-align: center;
-        font-weight: bolder;
-        font-size: 15px;
-        color: #ffffff;
-    }
-
 }
